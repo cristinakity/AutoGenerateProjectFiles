@@ -1,0 +1,9 @@
+﻿namespace {{ProjectName}}.{{Section}}.{{Folder}}
+{
+   public class {{EntityName}}Controller : GenericController<I{{EntityName}}Service, {{EntityName}}Controller, {{EntityName}}Response, {{EntityName}}Payload>
+   {
+		public {{EntityName}}Controller(ILogger<{{EntityName}}Controller> logger, I{{EntityName}}Service service) : base(logger, service)
+		{
+		}
+   }
+}

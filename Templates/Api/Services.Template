@@ -1,0 +1,1 @@
+﻿            services.AddTransient<I{{EntityName}}Service, {{EntityName}}Service>();

@@ -1,0 +1,8 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using AutoMapper;
+global using {{ProjectName}}.Business.Services;
+global using {{ProjectName}}.Business.Services.Core;
+global using {{ProjectName}}.Domain.Models;
+global using {{ProjectName}}.Domain.Responses;
+global using {{ProjectName}}.Domain.Payloads;
+global using {{ProjectName}}.API.Controllers.Core;

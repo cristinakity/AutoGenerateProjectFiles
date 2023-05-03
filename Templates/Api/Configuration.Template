@@ -1,0 +1,24 @@
+﻿using {{ProjectName}}.Data.Repositories;
+
+namespace {{ProjectName}}.{{Section}}
+{
+	public class {{ClassName}}
+	{
+		public static void Configure(IServiceCollection services, ConfigurationManager configuration)
+		{
+			services.AddAutoMapper(typeof(MappingProfile));
+			AddDataRepositoriesServices(services);
+			AddBusinessServices(services);
+		}
+
+		public static void AddDataRepositoriesServices(IServiceCollection services)
+		{
+			{{Repositories}}
+		}
+		
+		public static void AddBusinessServices(IServiceCollection services)
+		{
+			{{Services}}
+		}
+	}
+}

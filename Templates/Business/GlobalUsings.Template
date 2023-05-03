@@ -1,0 +1,7 @@
+﻿global using AutoMapper;
+global using {{ProjectName}}.Data.Repositories;
+global using {{ProjectName}}.Data.Repositories.Core;
+global using {{ProjectName}}.Domain.Models;
+global using {{ProjectName}}.Domain.Responses;
+global using {{ProjectName}}.Domain.Payloads;
+global using {{ProjectName}}.Business.Services.Core;

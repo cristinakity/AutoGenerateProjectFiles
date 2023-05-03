@@ -1,0 +1,17 @@
+﻿namespace {{ProjectName}}.{{Section}}
+{
+	public class {{ClassName}} : Profile
+	{
+		public {{ClassName}}()
+		{
+			Map();
+		}
+
+		private void Map()
+		{
+			{{MapEntityToResponse}}
+
+			{{MapPayloadToEntity}}
+		}
+	}
+}

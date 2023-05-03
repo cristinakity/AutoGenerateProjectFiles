@@ -1,0 +1,6 @@
+﻿namespace {{ProjectName}}.{{Section}}.{{Folder}}
+{
+    public interface I{{EntityName}}Repository : IGenericRepository<{{EntityName}}>
+    {
+    }
+}

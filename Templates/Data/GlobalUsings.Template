@@ -1,0 +1,7 @@
+﻿global using Dapper;
+global using Microsoft.ApplicationInsights;
+global using Microsoft.ApplicationInsights.Extensibility;
+global using Microsoft.Extensions.Configuration;
+global using {{ProjectName}}.Data.Repositories.Core;
+global using {{ProjectName}}.Domain.Models;
+global using RestSharp;

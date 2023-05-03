@@ -1,0 +1,7 @@
+﻿namespace {{ProjectName}}.{{Section}}.{{Folder}}
+{
+    public class {{EntityName}}Payload
+    {
+        {{Properties}}
+    }
+}

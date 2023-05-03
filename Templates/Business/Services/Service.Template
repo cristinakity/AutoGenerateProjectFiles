@@ -1,0 +1,9 @@
+﻿namespace {{ProjectName}}.{{Section}}.{{Folder}}
+{
+    public class {{EntityName}}Service : GenericService<I{{EntityName}}Repository, {{EntityName}}, {{EntityName}}Response, {{EntityName}}Payload>, I{{EntityName}}Service
+    {
+        public {{EntityName}}Service(I{{EntityName}}Repository repository, IMapper mapper) : base(repository, mapper)
+        {
+        }
+    }
+}

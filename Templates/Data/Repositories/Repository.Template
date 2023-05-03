@@ -1,0 +1,9 @@
+﻿namespace {{ProjectName}}.{{Section}}.{{Folder}}
+{
+    public class {{EntityName}}Repository : GenericRepository<{{EntityName}}>, I{{EntityName}}Repository
+    {
+        public {{EntityName}}Repository(IConfiguration config, TelemetryConfiguration telemetryConfig) : base(config, telemetryConfig, tableName: "{{TableName}}")
+        {
+        }
+    }
+}
