@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AutoGenerateProjectFiles.Console.Business;
 
-string connectionString = "Server=(LOCAL);Database=LaundryExtraClean;User Id=sa;Password=123456789;";
-string solutionName = "ExtraClean";
+string connectionString = "Server=(LOCAL);Database=Citamania;User Id=sa;Password=123456789;";
+string solutionName = "CitamaniaPOC";
 string folderPerSchema = "";
 if(args is { Length: > 1 })
 {
