@@ -30,7 +30,7 @@ namespace {{ProjectName}}.{{Section}}.{{Folder}}
             if (active != null)
             {
                 string activeString = active.Value ? "1" : "0";
-                activeWhere = typeof(IActive).IsAssignableFrom(typeof(TEntity)) ? $"where P.Active = {activeString}" : "";
+                //activeWhere = typeof(IActive).IsAssignableFrom(typeof(TEntity)) ? $"where P.Active = {activeString}" : "";
             }
 
             try

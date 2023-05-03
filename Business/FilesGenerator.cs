@@ -254,9 +254,9 @@
         {
             string attributes = "";
             var keyAttribute        =  "[Key]\n";
-            var identityAttribute   = "[DatabaseGenerated(DatabaseGeneratedOption.Identity)]\n";
-            var requiredAttribute   =  "        [Required]\n";
-            var maxLengthAttribute  = $"        [MaxLength({column.MaxLength})]\n";
+            var identityAttribute   = "    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]\n";
+            var requiredAttribute   =  "    [Required]\n";
+            var maxLengthAttribute  = $"    [MaxLength({column.MaxLength})]\n";
             maxLengthAttribute = column.MaxLength == -1 ? "" : maxLengthAttribute;
             attributes += column.IsPrimaryKey ? keyAttribute : "";
             attributes += column.IsIdentity ? identityAttribute : "";
