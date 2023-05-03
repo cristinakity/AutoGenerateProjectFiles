@@ -41,6 +41,7 @@
 		                        ELSE CONVERT(bit,1)
 	                        END AS [IsNull]
 	                        ,ISNULL(c.CHARACTER_MAXIMUM_LENGTH,0) as [MaxLength]
+							,CASE COLUMNPROPERTY (OBJECT_ID(@table),c.COLUMN_NAME ,'IsIdentity') WHEN 1 THEN 1 ELSE 0 END IsIdentity
                         FROM INFORMATION_SCHEMA.COLUMNS as c
                         LEFT JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS tc
 	                        ON	tc.TABLE_NAME	= c.TABLE_NAME

@@ -254,10 +254,12 @@
         {
             string attributes = "";
             var keyAttribute        =  "[Key]\n";
+            var identityAttribute   = "[DatabaseGenerated(DatabaseGeneratedOption.Identity)]\n";
             var requiredAttribute   =  "        [Required]\n";
             var maxLengthAttribute  = $"        [MaxLength({column.MaxLength})]\n";
             maxLengthAttribute = column.MaxLength == -1 ? "" : maxLengthAttribute;
             attributes += column.IsPrimaryKey ? keyAttribute : "";
+            attributes += column.IsIdentity ? identityAttribute : "";
             attributes += column.IsNull == false ? requiredAttribute : "";
             attributes += (new List<string>{ "ntext", "nvarchar", "varchar", "nchar", "text", "char" }).Any(x=> x == column.Type)
                           ? maxLengthAttribute : "";

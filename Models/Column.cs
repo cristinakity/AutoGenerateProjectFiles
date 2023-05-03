@@ -7,5 +7,6 @@
         public bool IsPrimaryKey { get; set; }
         public bool IsNull { get; set; }
         public int MaxLength { get; set; }
+        public bool IsIdentity { get; set; }
     }
 }
